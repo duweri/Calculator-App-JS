@@ -1,0 +1,41 @@
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh; /* body height is at least the full viewport height, 100% of screen */
+  margin: 0;
+}
+
+.calculator {
+  border: 1px solid #ccc;
+  padding: 16px;
+  border-radius: 8px; /* rounds the corners */
+  width: 260px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.display {
+  border: 1px solid #ccc;
+  padding: 10px; 
+  margin-bottom: 10px;
+  text-align: right;
+  font-size: 24px;
+  min-height: 40px;
+}
+
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* Creates 4 equal-width columns (1fr = 1 fraction of available space) */
+  gap: 8px; /* space between buttons in both directions */
+}
+
+button {
+  padding: 12px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.span-2 {
+  grid-column: span 2; /* makes the 0 buttons span across 2 columsn in the grid */
+}

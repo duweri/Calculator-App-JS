@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="calculator">
+    <div class="display" id="display">0</div> <!-- so the calculator shows 0 before any input -->
+    <div class="buttons">
+      <button data-type="action" data-action="clear">AC</button>
+      <button data-type="action" data-action="delete">DEL</button>
+      <button data-type="op" data-op="divide">÷</button>  <!-- op stands for operator -->
+      <button data-type="op" data-op="multiply">×</button>
+
+      <button data-type="digit">7</button>
+      <button data-type="digit">8</button>
+      <button data-type="digit">9</button>
+      <button data-type="op" data-op="subtract">−</button>
+
+      <button data-type="digit">4</button>
+      <button data-type="digit">5</button>
+      <button data-type="digit">6</button>
+      <button data-type="op" data-op="add">+</button>
+
+      <button data-type="digit">1</button>
+      <button data-type="digit">2</button>
+      <button data-type="digit">3</button>
+      <button data-type="action" data-action="equals">=</button>
+
+      <button class="span-2" data-type="digit">0</button>
+      <button data-type="digit">.</button>
+      <button disabled></button>
+    </div>
+  </div>
+</body>
+</html>
